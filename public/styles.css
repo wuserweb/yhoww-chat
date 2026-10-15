@@ -1,0 +1,108 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b0b0f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 25px;
+  background: #17171f;
+  border: 1px solid #30303d;
+  border-radius: 16px;
+}
+
+h1 {
+  color: #8b5cf6;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #a1a1aa;
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  margin: 20px 0;
+  padding: 12px;
+  background: #0b0b0f;
+  border-radius: 10px;
+}
+
+#chat-form {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  background: #252530;
+  color: white;
+  border: 1px solid #414151;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7c3aed;
+}
+
+
+#username {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #252530;
+  color: white;
+  border: 1px solid #414151;
+  border-radius: 8px;
+  outline: none;
+}
+
+#username:focus {
+  border-color: #8b5cf6;
+}
+
+#username::placeholder {
+  color: #a1a1aa;
+}
+
+
+.messages > div {
+  max-width: 85%;
+  overflow-wrap: anywhere;
+  color: #f4f4f5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#chat-form button {
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+#message-input:focus {
+  outline: 1px solid #8b5cf6;
+}
